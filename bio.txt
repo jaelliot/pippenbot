@@ -1,0 +1,95 @@
+About Jay-Alexander Elliot:
+Jay-Alexander is a resourceful bilingual engineer with extensive skills in cloud monitoring, automation, deployment, and troubleshooting. With a solid foundation in Computer Information Technology and Business Administration, he excels in building cloud environments using infrastructure-as-code (IaC) tools, and has significant experience with Linux, Unix, and Windows server operating systems. Jay-Alexander is organized, focused, and possesses extraordinary leadership acumen.
+
+Work Experience:
+
+- DevOps Engineer (Contract)
+  - PicoEdge (05/2020 to 03/2024)
+  - Responsibilities included ongoing maintenance of private cloud infrastructure, ensuring zero downtime for mission-critical Linux and FreeBSD servers, automating manual tasks with scripting languages (Python, Shell, Powershell, Golang, and Ansible), and providing 24/7 on-call support for critical systems.
+
+- Data Center Technician (Contract)
+  - Redapt Inc. – Redwood City, CA (05/2021 to 10/2021)
+  - Obtained expertise and experience in RedHat Linux environments and administered and addressed incidents with ServiceNow. Executed physical server builds in line with SOPs and QA standards to improve system performance. Reduced downtime for clients by swiftly addressing technical issues and performing routine maintenance on servers. Dressed and labeled cables for easy identification and traceability. Installed and managed structured cabling infrastructure. Moved and installed shelves, power strips, rails, servers, switches, and other equipment. Identified and reported problem devices and replaced defective parts. Continuously researched industry advancements, staying current with technological trends, and providing insightful recommendations for future data center improvements. Developed comprehensive documentation for data center operations, promoting consistency in daily procedures and training new staff members effectively.
+
+- Server Engineer (Contract)
+  - King Star Computers – Sunnyvale, CA (04/2019 to 06/2019)
+  - Enhanced server performance by implementing optimized configurations and routine maintenance. Reduced downtime through proactive monitoring and timely resolution of server issues. Improved security measures with regular patch updates and vulnerability assessments. Increased efficiency in server deployment through automation of repetitive tasks using scripting languages and tools. Maintained up-to-date documentation on server architecture, enabling efficient knowledge transfer within the team. Provided expert advice during hardware selection processes, ensuring optimal compatibility with existing infrastructure.
+
+- Computer Technician
+  - Staples (08/2017 to 02/2019)
+  - Responsible for repairing various customer electronics, including laptops, tablets, and both Apple and Android smartphones. Approached each repair with a "customer first" mentality, diligently diagnosing and resolving problems while offering helpful advice and support. Enhanced customer satisfaction by providing timely and efficient computer repair services. Collaborated with team members to complete complex repairs efficiently and effectively. Managed inventory of spare parts and tools, ensuring all necessary equipment was always readily available for technicians to perform their duties. Diagnosed and repaired hardware malfunctions, ensuring optimal computer functionality.
+
+- Information Technology Infrastructure Specialist (Contract)
+  - ROSALIND (09/2016 to 07/2017)
+  - Carried out the automation of tasks and parsing of logs with Python, Bash, Docker, and Ansible, leading to increases in productivity. Aided and supported developers in developing solutions for program errors, as well as performing regular backups to prevent data loss. Maintained, evaluated, and improved company information technology infrastructure to support key administrative and organizational initiatives. Enhanced cloud infrastructure performance by implementing automation tools and optimizing system configurations. Developed custom scripts for automating manual tasks, increasing team productivity and minimizing errors. Managed vendor relationships, negotiating contracts for cost-effective cloud services solutions. Utilized code and modern cloud-native deployment techniques to design, plan, and integrate cloud computing and virtualization systems.
+
+Career Goal:
+Jay-Alexander aims to leverage his expertise in cloud technologies, automation, and infrastructure management to drive innovation and create solutions that positively impact businesses and society.
+
+Skills:
+- Project Planning
+- Operating Systems: MacOS, Windows desktop and server, Linux (SUSE, RHEL, Debian), BSD (FreeBsd)
+- Performance Optimization: AWS Cost Explorer, Azure Advisor
+- Scripting Languages: Python, Shell, Powershell
+- Virtualization Technologies: VMware, Hyper-V, Vagrant
+- Containerization Technologies: Docker, Kubernetes, Nomad
+- CI/CD: GitHub Actions, ArgoCD
+- Configuration Management: HashiCorp Packer, Terraform, Ansible, Consul, Vault
+- Cloud platforms: AWS, Azure, GCP, DigitalOcean
+- Software Architecture: Lucidchart
+- Databases: Postgres, SQLite, Chroma
+- Large Language Models: Retrieval Augmented Generation, Llama Index, Groq
+- APIs: REST APIs
+- Programming Languages: Typescript, Golang, R, Python, GraphQL
+
+
+
+Certification:
+- AWS Certified Solutions Architect - PicoEdge (2024-2027)
+- Jamf Certified Associate - Jamf Pro (2024-2027)
+- Jamf Certified Associate - Jamf Protect (2024-2027)
+- DoD CUI Training
+- AWS Cloud Practitioner
+
+Achievements:
+- Implemented robust monitoring and alerting tools to reduce system downtime.
+- Automated processes with GitHub Actions to improve code deployment efficiency.
+- Developed custom scripts that boosted team productivity and minimized manual intervention.
+- Founded an AI company that's developing an AI tool for veternarians and pet owners.
+- 
+
+Contact:
+- LinkedIn: https://www.linkedin.com/in/jayalexanderelliot
+- GitHub: https://github.com/jaelliot
+- Website: https://www.jayalexanderelliot.com
+- Location: Orem, Utah 84058
+
+Strengths and Advantages:
+
+I have an adhd mind, and I can quickly learn new skillsets very quickly.
+
+
+Weaknesses and Disadvantages:
+
+My adhd mind races and I lose interest in things quickly.
+
+
+Interests and Hobbies:
+
+I'm a Crossfit regular; and I'm aiming to compete in the Crossfit games. Aside from Crossfit, I love reading books on Philosophy, Mysticism, the occult, history, mythology, and anything to do with those subjects. I love hiking and the outdoors too.
+
+
+
+Portfolio:
+
+
+
+
+
+Availability:
+Jay-Alexander is actively seeking new opportunities and is ready to start immediately.
+
+
+
+References:
+References are available upon request.

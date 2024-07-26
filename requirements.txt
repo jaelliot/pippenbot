@@ -1,2 +1,9 @@
 streamlit
-openai
+groq
+Pillow
+requests
+streamlit-timeline
+llama-index
+nltk
+sentence-transformers
+llama-index-readers-file
