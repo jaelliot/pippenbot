@@ -1,7 +1,9 @@
 import streamlit as st
 import requests
-from llama_index.core import VectorStoreIndex
-from llama_index.readers.file import SimpleDirectoryReader
+from llama_index.core import (
+    VectorStoreIndex,
+    SimpleDirectoryReader,
+)
 from PIL import Image
 import json
 from constant import info  # Assuming info is defined in constant.py
@@ -62,14 +64,11 @@ class DocumentQAApp:
         return input_text
 
     def load_css(self, file_name):
-        with open(file_name) as f:
-            st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
-
-    def gradient(self, color1, color2, color3, content1, content2):
-        st.markdown(f'<h1 style="text-align:center;background-image: linear-gradient(to right,{color1}, {color2});font-size:60px;border-radius:2%;">'
-                    f'<span style="color:{color3};">{content1}</span><br>'
-                    f'<span style="color:white;font-size:17px;">{content2}</span></h1>', 
-                    unsafe_allow_html=True)
+        try:
+            with open(file_name) as f:
+                st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
+        except FileNotFoundError:
+            st.error(f"CSS file {file_name} not found.")
 
     def run(self):
         st.title("📄 Document question answering")
@@ -110,23 +109,24 @@ class DocumentQAApp:
                 if st.button("Ask another question"):
                     st.experimental_rerun()
 
-        st.sidebar.markdown(self.photo, unsafe_allow_html=True)
-        self.load_css("styles/style.css")  # Changed to "styles/style.css"
+        st.sidebar.image(self.photo, caption="Profile Picture", use_column_width=True)
+        self.load_css("styles/style.css")
 
         with st.container():
             col1, col2 = st.columns([8, 3])
 
         with col1:
-            self.gradient('#FFD4DD', '#000395', 'e0fbfc', f"Hi, I'm {self.full_name}", self.intro)
+            st.markdown(f'<h1 style="text-align:center;font-size:60px;border-radius:2%;">'
+                        f'<span style="color:#28211E;">Hi, I\'m {self.full_name}</span><br>'
+                        f'<span style="color:#8DD9BF;font-size:17px;">{self.intro}</span></h1>', 
+                        unsafe_allow_html=True)
             st.write("")
             st.write(self.about)
         
         st.subheader('Career Snapshot')
         with open('bio.txt', "r") as f:  # Changed to 'bio.txt'
             data = f.read()
-        # Import timeline from streamlit_timeline
-        from streamlit_timeline import timeline
-        timeline(data, height=400)
+            st.write(data)
 
         st.subheader("Contact Me")
         contact_form = f"""

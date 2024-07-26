@@ -1,8 +1,11 @@
+#Constant.py
+
+
 info = {
     "Name": "Jay",
     "Full_Name": "Jay-Alexander Elliot",
     "Intro": "Startup Founder, Software Engineer, and AI Enthusiast",
-    "About": "Jay-Alexander is a Tech Educator and AI Enthusiast at cognitiveclass.ai. He is passionate about educating others on the latest technologies and how they can be used to solve real-world problems. Jay-Alexander has a background in computer science and has worked on a variety of projects ranging from web development to machine learning. In his free time, he enjoys reading, writing, and exploring the great outdoors.",
+    "About": "Jay-Alexander has a background in DevOps Engineering and has worked on a variety of projects ranging from web development to machine learning. In his free time, he enjoys reading, Crossfit, and exploring the great outdoors.",
     "City": "Lehi, Utah, USA",
     "Photo": "images/me.jpg",
     "Email": "jay@elliotdevops.com",
