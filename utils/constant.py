@@ -1,5 +1,4 @@
-#Constant.py
-
+# constant.py
 
 info = {
     "Name": "Jay",
@@ -7,7 +6,6 @@ info = {
     "Intro": "Startup Founder, Software Engineer, and AI Enthusiast",
     "About": "Jay-Alexander has a background in DevOps Engineering and has worked on a variety of projects ranging from web development to machine learning. In his free time, he enjoys reading, Crossfit, and exploring the great outdoors.",
     "City": "Lehi, Utah, USA",
-    "Photo": "images/me.jpg",
     "Email": "jay@elliotdevops.com",
     "Education": [
         {"Degree": "B.S. in Software Engineering", "Institution": "Utah Valley University", "Minors": ["Entrepreneurship", "Computer Information Technology"], "Status": "Currently Attending"},
@@ -15,21 +13,21 @@ info = {
         {"Semester": "Business", "Institution": "Diablo Valley College", "Location": "Pleasant Hill, CA"}
     ],
     "Skills": [
-    "Project Planning",
-    "MacOS", "Windows", "Linux", "FreeBSD",
-    "AWS Cost Explorer", "Azure Advisor",
-    "Python", "Shell", "Powershell",
-    "VMware", "Hyper-V", "Vagrant",
-    "Docker", "Kubernetes", "Nomad",
-    "GitHub Actions", "ArgoCD",
-    "Packer", "Terraform", "Ansible", "Consul", "Vault",
-    "AWS", "Azure", "GCP", "DigitalOcean",
-    "Lucidchart",
-    "Postgres", "SQLite", "Chroma",
-    "Retrieval Augmented Generation", "Llama Index", "Groq",
-    "REST APIs",
-    "Typescript", "Golang", "R", "Python", "GraphQL"
-],
+        "Project Planning",
+        "MacOS", "Windows", "Linux", "FreeBSD",
+        "AWS Cost Explorer", "Azure Advisor",
+        "Python", "Shell", "Powershell",
+        "VMware", "Hyper-V", "Vagrant",
+        "Docker", "Kubernetes", "Nomad",
+        "GitHub Actions", "ArgoCD",
+        "Packer", "Terraform", "Ansible", "Consul", "Vault",
+        "AWS", "Azure", "GCP", "DigitalOcean",
+        "Lucidchart",
+        "Postgres", "SQLite", "Chroma",
+        "Retrieval Augmented Generation", "Llama Index", "Groq",
+        "REST APIs",
+        "Typescript", "Golang", "R", "Python", "GraphQL"
+    ],
     "Experience": [
         {"Role": "Founder", "Company": "JaniePets", "Duration": "2023 - Present"},
         {"Role": "DevOps Engineer (Contract)", "Company": "PicoEdge", "Duration": "05/2020 to Current"},
@@ -65,5 +63,6 @@ info = {
         "GitHub": "https://github.com/jaelliot",
         "Personal_Website": "https://jayalexanderelliot.com",
         "Side_Gig": "https://www.mobilelegalsolutions.com/"
-    }
+    },
+    "Photo": "images/Jay-Canva-profile-pic.png"
 }
