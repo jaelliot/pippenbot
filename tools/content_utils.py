@@ -1,12 +1,12 @@
 # utils/content_utils.py
 
-import streamlit as st # type: ignore
-from utils.constant import info
+import streamlit as st
+from tools.constant import info
 
 contact = f"""
     :globe_with_meridians: [LinkedIn]({info['Social_Media']['LinkedIn']})  
     :email: [{info['Email']}](mailto:{info['Email']})   
-    :earth_africa: [Utah Valley University](https://maps.app.goo.gl/bfAP9bXekxB31iXp7)  
+    :earth_americas: [Utah Valley University](https://maps.app.goo.gl/bfAP9bXekxB31iXp7)  
 """
 
 def footer():

@@ -1,6 +1,6 @@
 import streamlit as st
 import importlib
-from utils import layout_utils, content_utils, helpers
+from tools import layout_utils, helpers
 import os
 
 # Set the page configuration as the first Streamlit command
@@ -16,15 +16,14 @@ local_css("style.css")
 if __name__ == "__main__":
     page_selection = layout_utils.always()
     
-    if page_selection == "Text":
-        submodule = importlib.import_module('app.about')
-    elif page_selection == "Chatbot":
-        submodule = importlib.import_module('app.chatbot')
-    
-    if hasattr(submodule, 'main'):
+    pages = [
+        'about', 'achievements', 'availability', 'career_goals', 'certifications', 
+        'cv', 'education', 'hobbies', 'projects', 'publications', 
+        'recommendations', 'skills', 'strengths', 'weaknesses', 'work_experience'
+    ]
+
+    for page in pages:
+        submodule = importlib.import_module(f'cpages.{page}')
         submodule.main()
-    else:
-        st.error(f"Module {submodule.__name__} does not have a main function.")
-    
-    #content_utils.footer()
+
     helpers.background()

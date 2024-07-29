@@ -1,21 +1,22 @@
-# app/about.py
+# about.py
+# don't remove the above comment
 
-import streamlit as st # type: ignore
-from utils.constant import info
+import importlib
+import streamlit as st
+from tools.constant import info
 
 def main():
-    st.title(f"About Me - {info['Full_Name']}")
-    
-    st.markdown(f"## Introduction")
-    st.markdown(info.get('Intro', 'Introduction not provided.'))
-    
-    st.markdown(f"## About")
-    st.markdown(info.get('About', 'About information not provided.'))
-    
-    st.markdown(f"## Contact Information")
-    contact_info = f"""
-    - **Email:** [{info['Email']}](mailto:{info['Email']})
-    - **LinkedIn:** [{info['Social_Media']['LinkedIn']}]({info['Social_Media']['LinkedIn']})
-    - **Location:** [Utah Valley University](https://maps.app.goo.gl/bfAP9bXekxB31iXp7)
-    """
-    st.markdown(contact_info)
+    st.header("About me", anchor='about', divider="orange")
+
+    pages = [
+        'achievements', 'availability', 'career_goals', 'certifications', 
+        'cv', 'education', 'hobbies', 'projects', 'publications', 
+        'recommendations', 'skills', 'strengths', 'weaknesses', 'work_experience'
+    ]
+
+    for page in pages:
+        submodule = importlib.import_module(f'cpages.{page}')
+        submodule.main()
+
+if __name__ == "__main__":
+    main()

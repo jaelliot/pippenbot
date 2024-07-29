@@ -2,7 +2,7 @@
 
 import os
 import base64
-import streamlit as st # type: ignore
+import streamlit as st
 from PIL import Image
 
 sss = st.session_state
