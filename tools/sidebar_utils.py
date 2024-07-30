@@ -1,7 +1,6 @@
 # sidebar_utils.py
 # Please don't remove the comment above.
 
-import base64
 import streamlit as st
 from tools.constant import info
 
@@ -18,27 +17,9 @@ contact = f"""
 """
 
 def add_logo_N_styles():
-    if 'profile_img' not in sss:
-        sss['profile_img'] = base64.b64encode(open(info['Photo'], "rb").read()).decode()
-    
     st.markdown(
         f"""
         <style>
-            [data-testid="stSidebarUserContent"] {{
-                background-image: url(data:image/png;base64,{sss['profile_img']});
-                padding-top: 120px;
-                background-size: 100px;
-                background-position: 20px 20px;
-            }}
-            [data-testid="stSidebarUserContent"]::before {{
-                content: "{info['Full_Name']}";
-                margin-left: 20px;
-                margin-bottom: 20px;
-                font-size: 18px;
-                position: relative;
-                top: -10px;
-                font-weight: bold;
-            }}
             [data-testid="stSidebarHeader"] {{
                 padding-top: 0;
                 padding-bottom: 0;

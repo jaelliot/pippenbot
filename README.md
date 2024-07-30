@@ -31,3 +31,5 @@ A simple Streamlit app that answers questions about an uploaded document via Ope
 # maybe add this too: <https://www.youtube.com/watch?v=JLVsFIXtvKE>
 
 # Remove the embed_rss and the endorsements
+
+# Fix the CSS

@@ -1,3 +1,6 @@
+# main_app.py
+# don't remove the above comment.
+
 import streamlit as st
 import importlib
 from tools import layout_utils, helpers
@@ -13,17 +16,29 @@ def local_css(file_name):
 
 local_css("style.css")
 
-if __name__ == "__main__":
-    page_selection = layout_utils.always()
-    
-    pages = [
-        'about', 'achievements', 'availability', 'career_goals', 'certifications', 
-        'cv', 'education', 'hobbies', 'projects', 'publications', 
-        'recommendations', 'skills', 'strengths', 'weaknesses', 'work_experience'
-    ]
+def render_about():
+    page = importlib.import_module('app.about')
+    page.main()
 
-    for page in pages:
-        submodule = importlib.import_module(f'cpages.{page}')
-        submodule.main()
+def render_chatbot():
+    page = importlib.import_module('app.chatbot')
+    page.main()
+
+def main():
+    pages = {
+        "Chatbot": render_chatbot,
+        "About": render_about
+    }
+
+    default_page = "Chatbot"
+    if "current_page" not in st.session_state:
+        st.session_state.current_page = default_page
+
+    page_selection = st.sidebar.radio("Navigation", list(pages.keys()), index=list(pages.keys()).index(st.session_state.current_page))
+    st.session_state.current_page = page_selection
+    pages[page_selection]()
 
     helpers.background()
+
+if __name__ == "__main__":
+    main()

@@ -1,3 +1,6 @@
+# app/chatbot.py
+# don't remove the above comment.
+
 import streamlit as st
 import json
 import toml
@@ -11,6 +14,9 @@ def main():
     st.title("Chatbot Page")
     st.write("This is the chatbot page.")
     st.write("This utilizes LLMs hosted on groq for the mixture of agents to function at any sort of reasonable speed.")
+    st.write("To Do; Fix the bugs. Center the picture, add text explaining to recruiters the purpose of this site.")
+    st.write("make sure the content in the sidebars remains the same between pages; move the chatbot content into a tab.")
+    st.write("Ask the Together AI people if I can selectively assign agents special functions like rag or an API and have those agents participate in MOA")
     
     # Load secrets
     try:
@@ -264,6 +270,7 @@ def main():
             print(f"User query: {query}")
 
         moa_agent: MOAgent = st.session_state.moa_agent
+        response = ""
         with st.chat_message("assistant"):
             message_placeholder = st.empty()
             try:
@@ -273,6 +280,7 @@ def main():
             except Exception as e:
                 st.error(f"Error during chat: {str(e)}")
                 print(f"Error during chat: {str(e)}")
+                response = "Sorry, I encountered an error while processing your request."
         
         st.session_state.messages.append({"role": "assistant", "content": response})
 

@@ -9,7 +9,6 @@ sss = st.session_state
 
 def main():
     st.header("Skills", anchor='skills', divider="orange")
-    st.info("Actively seeking new opportunities")
     st.markdown("""
         * **Programming Languages:** Python, Shell, Powershell, Golang, Typescript, R
         * **Cloud Platforms:** AWS, Azure, GCP, DigitalOcean
