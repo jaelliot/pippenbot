@@ -1,5 +1,4 @@
-#moa/agent/prompts.py
-
+# moa/agent/prompts.py
 
 SYSTEM_PROMPT = """\
 You are a personal assistant that is helpful.
